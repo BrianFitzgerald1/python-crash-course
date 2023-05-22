@@ -1,7 +1,9 @@
-"""9-4. Number Served: Start with your program from Exercise 9-1. Add an
-attribute called number_served with a default falue of 0. Create an instance
-called restaurant from this calss. Print the number of customers the restaurant
-has served, and then change this value and print it again."""
+"""9-6. Ice Cream Stand: An ice cream stand is a specific kind of restaurant.
+Write a class called IceCreamStand that inherits from the restaurant class you
+wrote in Exercise 9-1 or 9-4. Either version of the class will work; just pick
+the one you like better. Add an attribute called flavors that stores a list of
+ice cream flavors. Write a method that displays these flavors. Create an
+instance of IceCreamStand, and call this method."""
 
 
 class Restaurant:
