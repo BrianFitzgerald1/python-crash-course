@@ -33,7 +33,7 @@ class IceCreamStand(Restaurant):
         self.flavors = flavors
 
 
-restaurant = IceCreamStand("chip's")
+restaurant = IceCreamStand("chip's", 'dessert foods')
 
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
