@@ -5,13 +5,6 @@ the one you like better. Add an attribute called flavors that stores a list of
 ice cream flavors. Write a method that displays these flavors. Create an
 instance of IceCreamStand, and call this method."""
 
-class IceCreamStand:
-	"""Another type of restaurant."""
-	
-	def __init__(self, flavors):
-		"""Initialize the flavors attribute."""
-		self.flavors = flavors
-
 class Restaurant:
     """Attempt to model a restaurant."""
 
@@ -29,6 +22,13 @@ class Restaurant:
         """Display whether the restaurant is open or closed."""
         print(f"{self.restaurant_name.title()} is currently open!")
 
+
+class IceCreamStand:
+	"""Another type of restaurant."""
+	
+	def __init__(self, flavors):
+		"""Initialize the flavors attribute."""
+		self.flavors = flavors
 
 restaurant = Restaurant('big-C', 'turkish food')
 
