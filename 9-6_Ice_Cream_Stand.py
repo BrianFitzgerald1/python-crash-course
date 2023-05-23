@@ -8,7 +8,7 @@ instance of IceCreamStand, and call this method."""
 class IceCreamStand:
 	"""Another type of restaurant."""
 	
-	def __init__(self, flavors)
+	def __init__(self, flavors):
 		"""Initialize the flavors attribute."""
 		self.flavors = flavors
 
