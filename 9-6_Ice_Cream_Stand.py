@@ -23,14 +23,17 @@ class Restaurant:
         print(f"{self.restaurant_name.title()} is currently open!")
 
 
-class IceCreamStand:
-	"""Another type of restaurant."""
-	
-	def __init__(self, flavors):
-		"""Initialize the flavors attribute."""
-		self.flavors = flavors
+class IceCreamStand(Restaurant):
+    """Another type of restaurant."""
 
-restaurant = Restaurant('big-C', 'turkish food')
+    def __init__(self, restaurant_name, cuisine_type):
+        """Initialize atributes of the parent class.
+        Then initlaize attributes specific to an ice cream stand."""
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = flavors
+
+
+restaurant = IceCreamStand("chip's")
 
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
