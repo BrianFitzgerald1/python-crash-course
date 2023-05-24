@@ -42,5 +42,6 @@ class IceCreamStand(Restaurant):
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
 
+
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
