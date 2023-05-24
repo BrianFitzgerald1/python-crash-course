@@ -5,6 +5,7 @@ the one you like better. Add an attribute called flavors that stores a list of
 ice cream flavors. Write a method that displays these flavors. Create an
 instance of IceCreamStand, and call this method."""
 
+
 class Restaurant:
     """Attempt to model a restaurant."""
 
@@ -31,6 +32,12 @@ class IceCreamStand(Restaurant):
         Then initlaize attributes specific to an ice cream stand."""
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = flavors
+
+    def add_flavors(self):
+        """Add any number of ice cream flavors using input()."""
+        flavors = []
+        new_flavor = input("What flavor should be added to the menu?")
+        flavors.append(new_flavor)
 
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
