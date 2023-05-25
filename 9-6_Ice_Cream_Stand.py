@@ -7,7 +7,7 @@ instance of IceCreamStand, and call this method."""
 
 
 class Restaurant:
-    """Attempt to model a restaurant."""
+    # Attempt to model a restaurant.
 
     def __init__(self, restaurant_name, cuisine_type):
         """Initilize restaurant name and cuisine type attributes."""
@@ -27,21 +27,26 @@ class Restaurant:
 class IceCreamStand(Restaurant):
     """Another type of restaurant."""
 
-    def __init__(self, restaurant_name, cuisine_type):
+    def __init__(self, restaurant_name, cuisine_type, ):
         """Initialize atributes of the parent class.
         Then initlaize attributes specific to an ice cream stand."""
         super().__init__(restaurant_name, cuisine_type)
-        self.flavors = flavors
+        self.flavors = []
 
     def add_flavors(self):
-        """Add any number of ice cream flavors using input()."""
+        """Create an empty list called flavors.
+        Add any number of ice cream flavors using input()."""
         flavors = []
-        new_flavor = input("What flavor should be added to the menu?")
-        flavors.append(new_flavor)
+        flavor = input("\nWhat flavor should be added to the menu? ")
+        flavors.append(flavor)
+        new_flavor = flavors[-1]
+        print(f"{new_flavor.title()} has been added to the menu.")
 
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
-
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
+restaurant.add_flavors()
 
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
