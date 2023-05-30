@@ -31,11 +31,11 @@ class IceCreamStand(Restaurant):
         """Initialize atributes of the parent class.
         Then initlaize attributes specific to an ice cream stand."""
         super().__init__(restaurant_name, cuisine_type)
-        self.flavors = []
+        self.flavors = ['vanilla']
 
     def temporary_print_flavors(self):
         """Temporary method used to test whether the flavors attribute is created and assigned an empty list."""
-        print(flavors)
+        print(self.flavors)
 
     def add_flavors(self):
         """Create an empty list called flavors.
