@@ -42,6 +42,11 @@ class IceCreamStand(Restaurant):
         new_flavor = flavors[-1]
         print(f"{new_flavor.title()} has been added to the menu.")
 
+    def display_flavors(self):
+        """Display the list of available flavors."""
+        print("The following list of flavors are available to order.")
+        print("\n{flavors}")
+
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
 restaurant.describe_restaurant()
