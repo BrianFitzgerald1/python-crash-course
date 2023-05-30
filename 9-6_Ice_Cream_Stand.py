@@ -27,7 +27,7 @@ class Restaurant:
 class IceCreamStand(Restaurant):
     """Another type of restaurant."""
 
-    def __init__(self, restaurant_name, cuisine_type, ):
+    def __init__(self, restaurant_name, cuisine_type):
         """Initialize atributes of the parent class.
         Then initlaize attributes specific to an ice cream stand."""
         super().__init__(restaurant_name, cuisine_type)
@@ -45,13 +45,14 @@ class IceCreamStand(Restaurant):
     def display_flavors(self):
         """Display the list of available flavors."""
         print("The following list of flavors are available to order.")
-        print("\n{flavors}")
+        print(flavors)
 
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
 restaurant.add_flavors()
+# restaurant.display_flavors()
 
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
