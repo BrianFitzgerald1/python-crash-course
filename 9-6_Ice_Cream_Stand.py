@@ -44,11 +44,11 @@ class IceCreamStand(Restaurant):
         flavor = input("\nWhat flavor should be added to the menu? ")
         self.flavors.append(flavor)
         new_flavor = self.flavors[-1]
-        print(f"{new_flavor.title()} has been added to the menu.")
+        print(f"\n{new_flavor.title()} has been added to the menu.")
 
     def display_flavors(self):
         """Display the list of available flavors."""
-        print("The following list of flavors are available to order.")
+        print("\nThe following list of flavors are available to order.")
         print(self.flavors)
 
 
