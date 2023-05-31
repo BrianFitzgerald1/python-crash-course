@@ -33,32 +33,32 @@ class IceCreamStand(Restaurant):
         super().__init__(restaurant_name, cuisine_type)
         self.flavors = []
 
-    def temporary_print_flavors(self):
+    # def temporary_print_flavors(self):
         """Temporary method used to test whether the flavors attribute is created and assigned an empty list."""
-        print(self.flavors)
+        # print(self.flavors)
 
     def add_flavors(self):
         """Create an empty list called flavors.
         Add any number of ice cream flavors using input()."""
         # flavors = []
         flavor = input("\nWhat flavor should be added to the menu? ")
-        flavors.append(flavor)
-        new_flavor = flavors[-1]
+        self.flavors.append(flavor)
+        new_flavor = self.flavors[-1]
         print(f"{new_flavor.title()} has been added to the menu.")
 
     def display_flavors(self):
         """Display the list of available flavors."""
         print("The following list of flavors are available to order.")
-        print(flavors)
+        print(self.flavors)
 
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
 
-restaurant.temporary_print_flavors()
-# restaurant.add_flavors()
-# restaurant.display_flavors()
+# restaurant.temporary_print_flavors()
+restaurant.add_flavors()
+restaurant.display_flavors()
 
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
