@@ -41,9 +41,11 @@ class IceCreamStand(Restaurant):
         """Create an empty list called flavors.
         Add any number of ice cream flavors using input()."""
         # flavors = []
+        prompt = "\nWhat flavor should be added to the menu?"
+        prompt += "You can type 'done' when you are done making your suggestion(s)."
         flavor = ""
         while flavor != 'done':
-            flavor = input("\nWhat flavor should be added to the menu? ")
+            flavor = input(prompt)
             self.flavors.append(flavor)
             new_flavor = self.flavors[-1]
             print(f"\n{new_flavor.title()} has been added to the menu.")
