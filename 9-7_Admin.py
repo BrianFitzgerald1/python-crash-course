@@ -48,7 +48,8 @@ class Admin(User):
         """Display the privileges held by an 'Admin' user type."""
         print(
             f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
-        print(self.privileges)
+        for privilege in self.privileges:
+            print(privilege)
 
 
 user_1 = User('bilbo', 'baggins', 90, 'the shire', 'burglar')
