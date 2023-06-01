@@ -42,15 +42,17 @@ class IceCreamStand(Restaurant):
         Add any number of ice cream flavors using input()."""
         # flavors = []
         prompt = "\nWhat flavor should be added to the menu?"
-        prompt += "You can type 'done' when you are done making your suggestion(s)."
+        prompt += "\nYou can type 'done' when you are done making your suggestion(s): "
         flavor = ""
         while flavor != 'done':
             flavor = input(prompt)
             self.flavors.append(flavor)
             new_flavor = self.flavors[-1]
-            print(f"\n{new_flavor.title()} has been added to the menu.")
-        else:
-            break
+
+            if flavor != 'done':
+                print(f"\n{new_flavor.title()} has been added to the menu.")
+            else:
+                break
 
     def display_flavors(self):
         """Display the list of available flavors."""
@@ -61,8 +63,8 @@ class IceCreamStand(Restaurant):
 
 
 restaurant = IceCreamStand("chip's", 'dessert foods')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
 
 # restaurant.temporary_print_flavors()
 restaurant.add_flavors()
