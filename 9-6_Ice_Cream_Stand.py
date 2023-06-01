@@ -56,7 +56,7 @@ class IceCreamStand(Restaurant):
 
     def display_flavors(self):
         """Display the list of available flavors."""
-        print("\nThe following list of flavors are available to order.")
+        print("\nThe following flavors are available to order.")
         for flavor in self.flavors:
             print(self.flavors)
         # print(self.flavors)
