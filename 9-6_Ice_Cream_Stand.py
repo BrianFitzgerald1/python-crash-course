@@ -46,10 +46,10 @@ class IceCreamStand(Restaurant):
         flavor = ""
         while flavor != 'done':
             flavor = input(prompt)
-            self.flavors.append(flavor)
-            new_flavor = self.flavors[-1]
 
             if flavor != 'done':
+                self.flavors.append(flavor)
+                new_flavor = self.flavors[-1]
                 print(f"\n{new_flavor.title()} has been added to the menu.")
             else:
                 break
