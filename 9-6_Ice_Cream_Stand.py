@@ -17,11 +17,11 @@ class Restaurant:
     def describe_restaurant(self):
         """Display the name of the restaurant and describes the type of
         cuisine it serves."""
-        print(f"{self.restaurant_name.title()} serves {self.cuisine_type}.")
+        print(f"{self.restaurant_name} serves {self.cuisine_type}.")
 
     def open_restaurant(self):
         """Display whether the restaurant is open or closed."""
-        print(f"{self.restaurant_name.title()} is currently open!")
+        print(f"{self.restaurant_name} is currently open!")
 
 
 class IceCreamStand(Restaurant):
@@ -61,13 +61,8 @@ class IceCreamStand(Restaurant):
             print(flavor)
 
 
-restaurant = IceCreamStand("chip's", 'dessert foods')
-# restaurant.describe_restaurant()
-# restaurant.open_restaurant()
-
-# restaurant.temporary_print_flavors()
+restaurant = IceCreamStand("Chip's", 'dessert foods')
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
 restaurant.add_flavors()
 restaurant.display_flavors()
-
-# restaurant.describe_restaurant()
-# restaurant.open_restaurant()
