@@ -42,19 +42,19 @@ class Admin(User):
         super().__init__(first_name, last_name, age, location, occupation)
         self.privileges = ['can add post', 'can delete post', 'can ban user']
 
-    def show_privleges(self):
-        """Display the privileges held by an 'Admin' user type."""
-        print(
-            f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
-        for privilege in self.privileges:
-            print(privilege)
-
 
 class Privileges:
     # Create a separate privileges class.
     def __init__(self, privileges):
         """Initialize the Privileges class."""
         self.privileges = privileges
+
+    def show_privleges(self):
+        """Display the privileges held by an 'Admin' user type."""
+        print(
+            f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
+        for privilege in self.privileges:
+            print(privilege)
 
 
 user_1 = User('bilbo', 'baggins', 90, 'the shire', 'burglar')
