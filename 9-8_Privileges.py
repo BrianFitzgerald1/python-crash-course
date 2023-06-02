@@ -12,8 +12,6 @@ method called 'show_privleges()' that lists the administrator's set of
 privileges. Create and instance of 'Admin', and call your method."""
 
 
-
-
 class User:
     # Attempt to model a user on a website.
 
@@ -51,10 +49,12 @@ class Admin(User):
         for privilege in self.privileges:
             print(privilege)
 
+
 class Privileges:
     # Create a separate privileges class.
-    def __init__(self, )
-
+    def __init__(self, privileges):
+        """Initialize the Privileges class."""
+        self.privileges = privileges
 
 
 user_1 = User('bilbo', 'baggins', 90, 'the shire', 'burglar')
