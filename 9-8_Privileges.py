@@ -51,8 +51,8 @@ class Privileges:
 
     def show_privleges(self):
         """Display the privileges held by an 'Admin' user type."""
-        print(
-            f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
+        # print(
+        #    f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
         for privilege in self.privileges:
             print(privilege)
 
@@ -62,11 +62,18 @@ user_2 = User('gandalf', 'the gray', 190, 'middle earth', 'wizard')
 user_3 = User('thorin', 'oakenshield', 201, 'dwarf landia', 'king of dwarves')
 user_4 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 
+"""Create an admin privileges instance of the 'Privileges' class."""
+admin_privileges = Privileges(privileges)
+
 # user_1.describe_user()
 # user_1.greet_user()
 # user_2.describe_user()
 # user_2.greet_user()
 # user_3.describe_user()
 # user_3.greet_user()
+"""Call methods from the 'Admin' class, user_4."""
 user_4.describe_user()
 user_4.show_privleges()
+
+"""Call 'show_privileges' method from the 'Privileges' class, admin_privileges."""
+admin_privileges.show_privleges()
