@@ -45,10 +45,10 @@ class Admin(User):
 
 class Privileges:
     # Create a separate privileges class.
-    def __init__(self, privileges):
+    def __init__(self, privileges=[]):
         """Initialize the Privileges class."""
-        # self.privileges = privileges
-        self.privileges = []
+        self.privileges = privileges
+        # self.privileges = []
 
     def add_privileges(self):
         """Adds privileges to a list."""
@@ -70,9 +70,11 @@ user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 admin_privileges = Privileges('my_privileges')
 
 """Call methods from the 'Admin' class, user_1."""
-# user_1.describe_user()
-# user_1.show_privleges()
+user_1.describe_user()
+
 
 """Call 'show_privileges' method from the 'Privileges' class, admin_privileges."""
 admin_privileges.add_privileges()
 admin_privileges.show_privleges()
+
+user_1.privileges.show_privleges()
