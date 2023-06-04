@@ -47,12 +47,19 @@ class Privileges:
     def __init__(self, privileges):
         """Initialize the Privileges class."""
         # self.privileges = privileges
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        self.privileges = []
+
+    def add_privileges(self):
+        """Adds privileges to a list."""
+        self.privileges.append('can add post')
+        self.privileges.append('can delete post')
+        self.privileges.append('can ban user')
 
     def show_privleges(self):
         """Display the privileges held by an 'Admin' user type."""
         # print(
         #    f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
+        # self.privileges = ['can add post', 'can delete post', 'can ban user']
         for privilege in self.privileges:
             print(privilege)
 
@@ -63,7 +70,7 @@ user_3 = User('thorin', 'oakenshield', 201, 'dwarf landia', 'king of dwarves')
 user_4 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 
 """Create an admin privileges instance of the 'Privileges' class."""
-admin_privileges = Privileges(privileges)
+admin_privileges = Privileges('my_privileges')
 
 # user_1.describe_user()
 # user_1.greet_user()
