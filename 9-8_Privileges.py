@@ -40,6 +40,7 @@ class Admin(User):
         """Initialize attributes of the parent class.
         Then initialize attributes specific to the Admin user type."""
         super().__init__(first_name, last_name, age, location, occupation)
+        self.privileges = Privileges()
 
 
 class Privileges:
@@ -64,7 +65,7 @@ class Privileges:
             print(privilege)
 
 
-# user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
+user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 """Create an admin privileges instance of the 'Privileges' class."""
 admin_privileges = Privileges('my_privileges')
 
