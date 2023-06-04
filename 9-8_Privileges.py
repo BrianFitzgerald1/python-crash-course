@@ -64,23 +64,13 @@ class Privileges:
             print(privilege)
 
 
-user_1 = User('bilbo', 'baggins', 90, 'the shire', 'burglar')
-user_2 = User('gandalf', 'the gray', 190, 'middle earth', 'wizard')
-user_3 = User('thorin', 'oakenshield', 201, 'dwarf landia', 'king of dwarves')
-user_4 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
-
+# user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 """Create an admin privileges instance of the 'Privileges' class."""
 admin_privileges = Privileges('my_privileges')
 
-# user_1.describe_user()
-# user_1.greet_user()
-# user_2.describe_user()
-# user_2.greet_user()
-# user_3.describe_user()
-# user_3.greet_user()
 """Call methods from the 'Admin' class, user_4."""
-user_4.describe_user()
-user_4.show_privleges()
+user_1.describe_user()
+user_1.show_privleges()
 
 """Call 'show_privileges' method from the 'Privileges' class, admin_privileges."""
 admin_privileges.show_privleges()
