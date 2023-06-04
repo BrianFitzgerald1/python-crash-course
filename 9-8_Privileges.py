@@ -68,9 +68,10 @@ class Privileges:
 """Create an admin privileges instance of the 'Privileges' class."""
 admin_privileges = Privileges('my_privileges')
 
-"""Call methods from the 'Admin' class, user_4."""
-user_1.describe_user()
-user_1.show_privleges()
+"""Call methods from the 'Admin' class, user_1."""
+# user_1.describe_user()
+# user_1.show_privleges()
 
 """Call 'show_privileges' method from the 'Privileges' class, admin_privileges."""
+admin_privileges.add_privileges()
 admin_privileges.show_privleges()
