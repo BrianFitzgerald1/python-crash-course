@@ -40,7 +40,8 @@ class Admin(User):
         """Initialize attributes of the parent class.
         Then initialize attributes specific to the Admin user type."""
         super().__init__(first_name, last_name, age, location, occupation)
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        # self.privileges = ['can add post', 'can delete post', 'can ban user']
+        self.privileges = Privileges()
 
 
 class Privileges:
