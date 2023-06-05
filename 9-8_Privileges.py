@@ -46,29 +46,30 @@ class Admin(User):
 
 class Privileges:
     # Create a separate privileges class.
-    def __init__(self, privileges=[]):
+    def __init__(self, privileges_list=[]):
         """Initialize the Privileges class."""
-        self.privileges = privileges
-        # self.privileges = []
+        self.privileges_list = privileges_list
 
     def add_privileges(self):
         """Adds privileges to a list."""
-        self.privileges.append('can add post')
-        self.privileges.append('can delete post')
-        self.privileges.append('can ban user')
+        self.privileges_list = ['can add post',
+                                'can delete post', 'can ban user']
+        # self.privileges.append('can add post')
+        # self.privileges.append('can delete post')
+        # self.privileges.append('can ban user')
 
     def show_privleges(self):
         """Display the privileges held by an 'Admin' user type."""
         # print(
         #    f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
         # self.privileges = ['can add post', 'can delete post', 'can ban user']
-        for privilege in self.privileges:
+        for privilege in self.privileges_list:
             print(privilege)
 
 
 user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 """Create an admin privileges instance of the 'Privileges' class."""
-admin_privileges = Privileges('my_privileges')
+# admin_privileges = Privileges('my_privileges')
 
 """Call methods from the 'Admin' class, user_1."""
 user_1.describe_user()
