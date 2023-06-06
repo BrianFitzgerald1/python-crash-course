@@ -13,7 +13,6 @@ privileges. Create and instance of 'Admin', and call your method."""
 
 
 class User:
-    # Attempt to model a user on a website.
 
     def __init__(self, first_name, last_name, age, location, occupation):
         self.first_name = first_name
@@ -31,21 +30,24 @@ class User:
 
 
 class Privileges:
-    # Create a separate privileges class.
+
     def __init__(self, privileges_list=[]):
         self.privileges_list = privileges_list
+        self.privileges_list.append('can add post')
+        self.privileges_list.append('can delete post')
+        self.privileges_list.append('can ban user')
 
-    def add_privileges(self):
-        self.privileges_list = ['can add post',
-                                'can delete post', 'can ban user']
+    # def add_privileges(self):
+        # self.privileges_list = ['can add post',
+        # 'can delete post', 'can ban user']
         # self.privileges.append('can add post')
         # self.privileges.append('can delete post')
         # self.privileges.append('can ban user')
 
     def show_privleges(self):
-        # print(
-        # f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
-        # self.privileges = ['can add post', 'can delete post', 'can ban user']
+        print(
+            f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
+        self.privileges = ['can add post', 'can delete post', 'can ban user']
         for privilege in self.privileges_list:
             print(privilege)
 
@@ -65,9 +67,5 @@ user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
 """Call methods from the 'Admin' class, user_1."""
 user_1.describe_user()
 
-
-"""Call 'show_privileges' method from the 'Privileges' class, admin_privileges."""
-admin_privileges.add_privileges()
-admin_privileges.show_privleges()
 
 user_1.privileges.show_privleges()
