@@ -37,17 +37,8 @@ class Privileges:
         self.privileges_list.append('can delete post')
         self.privileges_list.append('can ban user')
 
-    # def add_privileges(self):
-        # self.privileges_list = ['can add post',
-        # 'can delete post', 'can ban user']
-        # self.privileges.append('can add post')
-        # self.privileges.append('can delete post')
-        # self.privileges.append('can ban user')
-
     def show_privleges(self):
-        print(
-            f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        print("This user has a following privileges")
         for privilege in self.privileges_list:
             print(privilege)
 
@@ -56,13 +47,10 @@ class Admin(User):
 
     def __init__(self, first_name, last_name, age, location, occupation):
         super().__init__(first_name, last_name, age, location, occupation)
-        # self.privileges = ['can add post', 'can delete post', 'can ban user']
         self.privileges = Privileges()
 
 
 user_1 = Admin('tommy', 'timot', '19', 'costa rica', 'painter')
-
-# admin_privileges = Privileges('my_privileges')
 
 """Call methods from the 'Admin' class, user_1."""
 user_1.describe_user()
