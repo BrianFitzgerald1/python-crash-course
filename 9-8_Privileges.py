@@ -61,7 +61,7 @@ class Privileges:
     def show_privleges(self):
         """Display the privileges held by an 'Admin' user type."""
         # print(
-        #    f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
+        # f"\n{self.first_name.title()} {self.last_name.title()} has the following privileges.")
         # self.privileges = ['can add post', 'can delete post', 'can ban user']
         for privilege in self.privileges_list:
             print(privilege)
