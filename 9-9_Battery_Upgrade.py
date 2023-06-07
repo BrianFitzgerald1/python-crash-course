@@ -76,3 +76,4 @@ my_leaf.battery.get_range()
 
 my_leaf.battery.upgrade_battery()
 my_leaf.battery.describe_battery()
+my_leaf.battery.get_range()
