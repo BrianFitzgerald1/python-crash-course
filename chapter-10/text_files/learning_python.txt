@@ -1,0 +1,2 @@
+In Python you can create classes to model real life objects. Each class can have its own methods, which are functions specific to that class.
+In Python you can read from other files and use the contents of those files to perform various tasks.
