@@ -6,4 +6,4 @@ contents += "I also love working with data.\n"
 
 
 path = Path('programming.txt')
-path.write_text("I love programming.")
+path.write_text(contents)
