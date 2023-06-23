@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+contents = input("Please enter your name: ")
 
 path = Path('chapter-10/text_files/guest.txt')
 path.write_text(contents)
