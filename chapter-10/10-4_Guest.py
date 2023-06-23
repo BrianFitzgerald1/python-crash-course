@@ -2,5 +2,6 @@
 
 from pathlib import Path
 
-# path = Path('programming.txt')
-# path.write_text(contents)
+
+path = Path('chapter-10/text_files/guest.txt')
+path.write_text(contents)
