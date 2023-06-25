@@ -3,7 +3,7 @@ file."""
 
 from pathlib import Path
 
-# path = Path('chapter-10/text_files/guest_book.txt')
+path = Path('chapter-10/text_files/guest_book.txt')
 
 names = ''
 while True:
@@ -15,4 +15,4 @@ while True:
     elif name == 'done':
         break
 
-# print(names)
+path.write_text(names)
