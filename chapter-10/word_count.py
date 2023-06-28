@@ -15,4 +15,10 @@ def count_words(path):
 
 
 path = Path('alice.txt')
-count_words(path)
+
+filenames = ['alice.txt', 'siddhartha.txt',
+             'moby_dick.txt', 'little_women.txt']
+
+for filename in filenames:
+    path = Path(filename)
+    count_words(path)
