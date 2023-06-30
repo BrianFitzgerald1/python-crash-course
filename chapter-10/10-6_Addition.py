@@ -7,7 +7,7 @@ input_1 = input("Enter the first number: ")
 print(f"The value you entered is {input_1}.\n")
 
 input_2 = input("Please enter the second number: ")
-print(f"The value you entered is {input_1}.\n")
+print(f"The value you entered is {input_2}.\n")
 
 number_1 = int(input_1)
 
