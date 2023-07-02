@@ -7,15 +7,23 @@ your program by entering two numbers and then by entering some text instead of
 a number."""
 
 print("Give me any two numbers and I will add them together for you.\n")
+input_1 = ''
+input_2 = ''
+while input_1:
+    try:
+        input_1 = int(input("Enter the first number: "))
+    except ValueError:
+        if type(input_1) == int:
+            break
+        else:
+            print(f"{input} is not an interger.")
 
-while True:
-    input_1 = input("Enter the first number: ")
-    print(f"The value you entered is {input_1}.\n")
-    if type(input_1) != int:
-        print(f"{input_1} is not an interger.")
-        input_1 = input("Please enter an interger value.")
-    elif type(input_1) == int:
-        break
+
+# if type(input_1) != int:
+    # print(f"{input_1} is not an interger.")
+    # input_1 = input("Please enter an interger value.")
+# elif type(input_1) == int:
+    # break
 
 input_2 = input("Please enter the second number: ")
 print(f"The value you entered is {input_2}.\n")
