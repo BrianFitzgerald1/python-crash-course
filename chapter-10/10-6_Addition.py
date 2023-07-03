@@ -1,7 +1,7 @@
 """10-6. Addition: One common problem when programming for numerical input
 occurs when people provide text instead of numbers. When you try to convert
 the input to an int, you'll get a ValueError. Write a program that prompts for
-two numbers. Add them together an print the result. Catch the ValueError if
+two numbers. Add them together and print the result. Catch the ValueError if
 either input value is not a number, and print a friendly error message. Test
 your program by entering two numbers and then by entering some text instead of
 a number."""
@@ -9,14 +9,10 @@ a number."""
 print("Give me any two numbers and I will add them together for you.\n")
 input_1 = ''
 input_2 = ''
-while input_1:
-    try:
-        input_1 = int(input("Enter the first number: "))
-    except ValueError:
-        if type(input_1) == int:
-            break
-        else:
-            print(f"{input} is not an interger.")
+input_1 = int(input("Enter the first number: "))
+if type(input_1) == int:
+else:
+    print(f"{input} is not an interger.")
 
 
 # if type(input_1) != int:
