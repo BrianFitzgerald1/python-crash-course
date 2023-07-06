@@ -13,21 +13,32 @@ active_2 = True
 input_1 = input("Enter the first number: ")
 input_2 = input("Please enter the second number: ")
 
-while active_1 == True:
+"""while active_1 == True:
     try:
         number_1 = int(input_1)
     except ValueError:
-        print(f"The value {input_1} is not an integer.")
+        print(f"\nThe value {input_1} is not an integer.")
         input_1 = input("Enter another number: ")
-        active_1 = False
+        active_1 = False"""
+try:
+    number_1 = int(input_1)
+except ValueError:
+    print(f"The value {input_1} is not an integer.")
+    input_1 = input("Enter another number: ")
 
-while active_2 == True:
+"""while active_2 == True:
     try:
         number_2 = int(input_2)
     except ValueError:
         print(f"\nThe value {input_2} is not an integer.")
         input_2 = input("Enter another number: ")
-        active_2 = False
+        active_2 = False"""
+
+try:
+    number_2 = int(input_2)
+except ValueError:
+    print(f"\nThe value {input_2} is not an integer.")
+    input_2 = input("Enter another number: ")
 
 result = number_1 + number_2
 print(f"Adding the two numbers produces {result}.")
