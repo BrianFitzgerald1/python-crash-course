@@ -9,17 +9,19 @@ a number."""
 print("Give me any two numbers and I will add them together for you.\n")
 # input_1 = ''
 # input_2 = ''
-active = True
+active_1 = True
+active_2 = True
 input_1 = input("Enter the first number: ")
 input_2 = input("Please enter the second number: ")
 
-while active == True:
+while active_1 == True:
     try:
         number_1 = int(input_1)
     except ValueError:
         print(f"The value {input_1} is not an integer.")
         input_1 = input("Enter another number: ")
 
+while active_2 == True:
     try:
         number_2 = int(input_2)
     except ValueError:
