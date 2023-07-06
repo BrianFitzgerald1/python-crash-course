@@ -7,8 +7,7 @@ your program by entering two numbers and then by entering some text instead of
 a number."""
 
 print("Give me any two numbers and I will add them together for you.\n")
-# input_1 = ''
-# input_2 = ''
+
 active_1 = True
 active_2 = True
 input_1 = input("Enter the first number: ")
@@ -20,6 +19,7 @@ while active_1 == True:
     except ValueError:
         print(f"The value {input_1} is not an integer.")
         input_1 = input("Enter another number: ")
+        active_1 = False
 
 while active_2 == True:
     try:
@@ -27,6 +27,7 @@ while active_2 == True:
     except ValueError:
         print(f"\nThe value {input_2} is not an integer.")
         input_2 = input("Enter another number: ")
+        active_2 = False
 
 result = number_1 + number_2
 print(f"Adding the two numbers produces {result}.")
