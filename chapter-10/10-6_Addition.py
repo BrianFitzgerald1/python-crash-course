@@ -18,11 +18,13 @@ while active == True:
         number_1 = int(input_1)
     except ValueError:
         print(f"The value {input_1} is not an integer.")
+        input_1 = input("Enter another number: ")
 
     try:
         number_2 = int(input_2)
     except ValueError:
         print(f"\nThe value {input_2} is not an integer.")
+        input_2 = input("Enter another number: ")
 
 result = number_1 + number_2
 print(f"Adding the two numbers produces {result}.")
