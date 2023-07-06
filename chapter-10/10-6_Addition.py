@@ -7,26 +7,20 @@ your program by entering two numbers and then by entering some text instead of
 a number."""
 
 print("Give me any two numbers and I will add them together for you.\n")
-input_1 = ''
-input_2 = ''
-input_1 = int(input("Enter the first number: "))
-if type(input_1) == int:
-else:
-    print(f"{input} is not an interger.")
-
-
-# if type(input_1) != int:
-    # print(f"{input_1} is not an interger.")
-    # input_1 = input("Please enter an interger value.")
-# elif type(input_1) == int:
-    # break
-
+# input_1 = ''
+# input_2 = ''
+input_1 = input("Enter the first number: ")
 input_2 = input("Please enter the second number: ")
-print(f"The value you entered is {input_2}.\n")
 
-number_1 = int(input_1)
+try:
+    number_1 = int(input_1)
+except ValueError:
+    print(f"The value {input_1} is not an integer.")
 
-number_2 = int(input_2)
+try:
+    number_2 = int(input_2)
+except ValueError:
+    print(f"\nThe value {input_2} is not an integer.")
 
 result = number_1 + number_2
 print(f"Adding the two numbers produces {result}.")
