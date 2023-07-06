@@ -9,18 +9,20 @@ a number."""
 print("Give me any two numbers and I will add them together for you.\n")
 # input_1 = ''
 # input_2 = ''
+active = True
 input_1 = input("Enter the first number: ")
 input_2 = input("Please enter the second number: ")
 
-try:
-    number_1 = int(input_1)
-except ValueError:
-    print(f"The value {input_1} is not an integer.")
+while active == True:
+    try:
+        number_1 = int(input_1)
+    except ValueError:
+        print(f"The value {input_1} is not an integer.")
 
-try:
-    number_2 = int(input_2)
-except ValueError:
-    print(f"\nThe value {input_2} is not an integer.")
+    try:
+        number_2 = int(input_2)
+    except ValueError:
+        print(f"\nThe value {input_2} is not an integer.")
 
 result = number_1 + number_2
 print(f"Adding the two numbers produces {result}.")
