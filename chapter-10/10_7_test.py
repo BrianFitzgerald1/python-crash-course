@@ -6,5 +6,5 @@ def get_input_1(input_1):
     except ValueError:
         print(f"{input_1} is not an integer.")
 
-
-get_input_1()
+while 
+get_input_1(input_1)
