@@ -3,5 +3,10 @@
 from pathlib import Path
 
 path = Path('text_files/cats.txt')
-contents = path.read_text()
-print(contents)
+
+try:
+    contents = path.read_text()
+    print(contents)
+
+except FileNotFoundError:
+    print("Sorry, but this file can't be found in this directory.\nTry switching to another directory.")
