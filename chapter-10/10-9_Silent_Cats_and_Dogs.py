@@ -10,11 +10,11 @@ try:
     print(contents_1)
 
 except FileNotFoundError:
-    print("Sorry, but this file can't be found in this directory.\nTry switching to another directory.")
+    pass
 
 try:
     contents_2 = path_2.read_text()
     print(contents_2)
 
 except FileNotFoundError:
-    print("Sorry, but this file can't be found in this directory.\nTry switching to another directory.")
+    pass
