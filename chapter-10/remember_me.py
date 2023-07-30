@@ -1,6 +1,11 @@
 from pathlib import Path
 import json
 
+
+def greet_user():
+    """Greet the user by name."""
+
+
 path = Path('username.json')
 
 if path.exists():
