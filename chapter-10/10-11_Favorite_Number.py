@@ -3,6 +3,11 @@
 from pathlib import Path
 import json
 
+path = Path('user_favorite_number.json')
+
 fav_number = input("Tell me your favorite number and I'll remember it. ")
+contents = json.dumps(fav_number)
+path.write_text(contents)
+
 print(
     f"Your number is {fav_number}. I'll remember that the next time we meet.")
