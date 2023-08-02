@@ -4,3 +4,7 @@ from pathlib import Path
 import json
 
 path = Path('user_dict.json')
+
+user_dict = []
+contents = json.dumps(user_dict)
+path.write_text(contents)
