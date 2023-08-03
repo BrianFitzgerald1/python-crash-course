@@ -5,6 +5,12 @@ import json
 
 path = Path('user_dict.json')
 
-user_dict = []
+user_dict = {}
 contents = json.dumps(user_dict)
 path.write_text(contents)
+
+
+def get_user_age():
+    user_dict['age'] = input("How old are you? ")
+
+    print(user_dict)
