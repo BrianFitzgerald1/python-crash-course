@@ -10,14 +10,16 @@ contents = json.dumps(user_dict)
 path.write_text(contents)
 
 
-def get_user_age():
+def get_user_info():
     username = input("What is your name? ")
     user_age = input("How old are you? ")
     color = input("What is your favorite color? ")
 
     user_info = {'username': username, 'user age': user_age, 'color': color, }
 
-    print(user_dict)
+    contents = json.dumps(user_info)
+    path.write_text(contents)
+    return user_info
 
 
 get_user_age()
