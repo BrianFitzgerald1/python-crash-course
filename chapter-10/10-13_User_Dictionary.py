@@ -11,7 +11,11 @@ path.write_text(contents)
 
 
 def get_user_age():
-    user_dict['age'] = input("How old are you? ")
+    username = input("What is your name? ")
+    user_age = input("How old are you? ")
+    color = input("What is your favorite color? ")
+
+    user_info = {'username': username, 'user age': user_age, 'color': color, }
 
     print(user_dict)
 
