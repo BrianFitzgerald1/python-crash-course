@@ -3,7 +3,7 @@
 from pathlib import Path
 import json
 
-path = Path('user_dict.json')
+path = Path('user_info.json')
 
 user_dict = {}
 contents = json.dumps(user_dict)
@@ -14,3 +14,6 @@ def get_user_age():
     user_dict['age'] = input("How old are you? ")
 
     print(user_dict)
+
+
+get_user_age()
