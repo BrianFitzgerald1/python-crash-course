@@ -22,4 +22,4 @@ def get_user_info():
     return user_info
 
 
-get_user_age()
+get_user_info()
