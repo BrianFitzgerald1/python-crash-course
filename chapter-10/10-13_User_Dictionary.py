@@ -3,11 +3,18 @@
 from pathlib import Path
 import json
 
-path = Path('user_info.json')
-
 user_dict = {}
 contents = json.dumps(user_dict)
 path.write_text(contents)
+
+
+def greet_user():
+    path = Path('user_info.json')
+    if path.exists():
+        contents = path.read_text()
+        user_dict = json.loads(contents)
+    else:
+        None
 
 
 def get_user_info():
