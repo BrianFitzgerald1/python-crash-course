@@ -8,15 +8,6 @@ contents = json.dumps(user_dict)
 path.write_text(contents)
 
 
-def get_stored_user_info(path):
-    if path.exists():
-        contents = path.read_text()
-        user_dict = json.loads(contents)
-        return user_dict
-    else:
-        return None
-
-
 def greet_user():
     path = Path('user_info.json')
     if path.exists():
@@ -24,6 +15,15 @@ def greet_user():
         user_dict = json.loads(contents)
     else:
         None
+
+
+def get_stored_user_info(path):
+    if path.exists():
+        contents = path.read_text()
+        user_dict = json.loads(contents)
+        return user_dict
+    else:
+        return None
 
 
 def get_user_info():
